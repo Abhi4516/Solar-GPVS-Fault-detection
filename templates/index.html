@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPVS-Faults-Detection</title>
+    <style>
+        body {
+            background-image: url('/static/solar_power.avif');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            text-align: center;
+        }
+        .container {
+            margin-top: 100px;
+            display: inline-block;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h1 {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 100px;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: none;
+            background-color: #ffffff;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #4CAF50;
+            color: #ffffff;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>GPVS-Faults-Detection</h1>
+        <form action="/predict" method="post">
+            <label for="Time">Time:</label>
+            <input type="text" id="Time" name="Time"><br>
+            
+            <label for="Ipv">Ipv:</label>
+            <input type="text" id="Ipv" name="Ipv"><br>
+            
+            <label for="Vpv">Vpv:</label>
+            <input type="text" id="Vpv" name="Vpv"><br>
+
+            <label for="Vdc">Vdc:</label>
+            <input type="text" id="Vdc" name="Vdc"><br>
+
+            <label for="ia">ia:</label>
+            <input type="text" id="ia" name="ia"><br>
+
+            <label for="ib">ib:</label>
+            <input type="text" id="ib" name="ib"><br>
+
+            <label for="ic">ic:</label>
+            <input type="text" id="ic" name="ic"><br>
+
+            <label for="va">va:</label>
+            <input type="text" id="va" name="va"><br>
+
+            <label for="vb">vb:</label>
+            <input type="text" id="vb" name="vb"><br>
+
+            <label for="vc">vc:</label>
+            <input type="text" id="vc" name="vc"><br>
+
+            <label for="Iabc">Iabc:</label>
+            <input type="text" id="Iabc" name="Iabc"><br>
+
+            <label for="If">If:</label>
+            <input type="text" id="If" name="If"><br>
+
+            <label for="Vabc">Vabc:</label>
+            <input type="text" id="Vabc" name="Vabc"><br>
+
+            <label for="Vf">Vf:</label>
+            <input type="text" id="Vf" name="Vf"><br>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
+
+
+

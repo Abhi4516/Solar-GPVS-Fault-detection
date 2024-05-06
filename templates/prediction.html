@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-image: url('/static/solar_power.avif');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: #7f113d;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow effect */
+            margin: 50px auto; /* Center the container */
+            max-width: 600px; /* Limit container width */
+            backdrop-filter: blur(10px); /* Apply blur effect */
+        }
+        h1 {
+            font-weight: bold;
+        }
+        .result-box {
+            background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Prediction Result</h1>
+        <div class="result-box">
+            <p>{{ prediction_text }}</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
