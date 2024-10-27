@@ -2,6 +2,7 @@ from flask import Flask, render_template, request
 import pickle
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
+import xgboost
 
 app = Flask(__name__)
 
