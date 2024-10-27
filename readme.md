@@ -50,3 +50,11 @@ Several classification algorithms were implemented to build the fault classifica
 5. Random Forests
 6. XGBoost
 7. Support Vector Machines (SVM)
+
+
+### Result
+
+![1730018009459](image/readme/1730018009459.png)
+
+
+![1730018030566](image/readme/1730018030566.png)
